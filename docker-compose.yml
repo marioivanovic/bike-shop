@@ -16,7 +16,6 @@ services:
       - "5001:5000"
     volumes:
       - ./bikeshop-backend:/app
-      - /app/node_modules
     environment:
       - DB_HOST=db
       - DB_USER=root
@@ -35,7 +34,6 @@ services:
       - MYSQL_DATABASE=bikeshop
     volumes:
       - db_data:/var/lib/mysql
-      - ./bikeshop-backend/docker-db:/docker-entrypoint-initdb.d
 
 volumes:
   db_data:
