@@ -1,0 +1,7 @@
+.review-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+    height: 250px;
+    background-color: antiquewhite;
+}

@@ -4,6 +4,8 @@ import helmet from 'helmet';
 import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
+import authRoutes from './routes/authRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 import { fileURLToPath } from 'url';
 
 
@@ -26,6 +28,8 @@ app.use(cors({
 }));
 
 app.use(express.json());
+app.use('/auth', authRoutes);
+app.use('/', userRoutes);
 
 
 app.listen(PORT, () => {
