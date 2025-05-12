@@ -20,7 +20,7 @@ function RegisterForm() {
     const nameRef = useRef(null);
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
-    const [captchaToken, setRecaptchaToken] = useState(null);
+    const [captchaToken, setReCaptchaToken] = useState(null);
     const recaptchaRef = useRef();
     const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     const isPasswordStrong = (password) =>
@@ -33,7 +33,7 @@ function RegisterForm() {
     }, []);
 
     const handleCaptchaChange = (token) => {
-        setRecaptchaToken(token);
+        setReCaptchaToken(token);
     };
 
     const handleChange = (e) => {
@@ -80,6 +80,7 @@ function RegisterForm() {
             alert('❌ Veuillez valider le CAPTCHA');
             return;
         }
+
         try {
             const formDataToSend = new FormData();
             formDataToSend.append('firstName', formData.firstName);
