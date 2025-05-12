@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router';
 import { AuthProvider } from './hooks/useAuth';
 import Home from './components/pages/Home';
 import BikeCard from './components/bikes/bikeCard';
