@@ -119,17 +119,9 @@
 //             target: { value: 'SuperP@ssword123' }
 //         });
 
-//         // Solution 1: Injecter directement un token CAPTCHA dans le composant
-//         // Si possible, exposer une méthode pour les tests
-
-//         // Solution 2: Contourner la vérification du bouton en modifiant le composant
-//         // pour le mode test
-
-//         // Solution 3: La plus simple pour l'instant - Bypasser le test CAPTCHA
+//
 //         const submitButton = screen.getByText(/s'inscrire/i);
 
-//         // Démarche partielle - On testera la soumission du formulaire séparément
-//         // du CAPTCHA, qui est un élément externe
 //         expect(screen.getByTestId('firstName')).toHaveValue('Alice');
 //         expect(screen.getByTestId('lastName')).toHaveValue('Durand');
 //         expect(screen.getByLabelText(/email/i)).toHaveValue('alice@mail.com');
