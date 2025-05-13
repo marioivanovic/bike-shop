@@ -121,6 +121,7 @@ function RegisterForm() {
                                 placeholder='Entrez votre prénom...'
                                 value={formData.firstName}
                                 onChange={handleChange}
+                                data-testid="firstName"
                                 required
                             />
                         </div>
@@ -134,6 +135,7 @@ function RegisterForm() {
                                 placeholder='Entrez votre nom...'
                                 value={formData.lastName}
                                 onChange={handleChange}
+                                data-testid="lastName"
                                 required
                             />
                         </div>
