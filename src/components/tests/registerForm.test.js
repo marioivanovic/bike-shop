@@ -29,7 +29,7 @@
 // });
 
 // describe('Test fonctionnel du RegisterForm', () => {
-//     test('L’utilisateur peut remplir et soumettre le formulaire', async () => {
+//     test('L’utilisateur arrive à remplir et soumettre son formulaire', async () => {
 //         render(
 //             <BrowserRouter>
 //                 <RegisterForm />
@@ -48,7 +48,7 @@
 //         // On soumet notre formulaire
 //         fireEvent.click(screen.getByText(/s'inscrire/i));
 
-//         //On va vérifier qu’aucune erreur n’est affichée et que ça a marché
+//         //On va vérifier qu’aucune erreur n’est affichée et que ça a fonctionné
 //         await waitFor(() => {
 //             expect(screen.queryByText(/email invalide/i)).not.toBeInTheDocument();
 //             expect(screen.queryByText(/mot de passe trop faible/i)).not.toBeInTheDocument();
@@ -196,7 +196,7 @@ describe('Test fonctionnel du RegisterForm', () => {
         expect(screen.getByLabelText(/email/i)).toHaveValue('alice@mail.com');
         expect(screen.getByLabelText(/mot de passe/i)).toHaveValue('SuperP@ssword123');
 
-        // Vérifier que le bouton est présent
+        // Vérifier que le bouton  s'inscrire est présent
         expect(screen.getByText(/s'inscrire/i)).toBeInTheDocument();
     });
 });
